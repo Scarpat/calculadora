@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,6 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <head>
+  <style>
+@import url('https://fonts.cdnfonts.com/css/led-digital-7');
+</style>
+<link href="https://fonts.cdnfonts.com/css/led-digital-7" rel="stylesheet"/>
+                
+  </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
