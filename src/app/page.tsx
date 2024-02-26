@@ -61,6 +61,7 @@ export default function Home() {
               </button>
               {nums.map((e) => (
                 <button
+                key={e}
                   onClick={() => {
                     handleAddToCount(String(e));
                   }}
